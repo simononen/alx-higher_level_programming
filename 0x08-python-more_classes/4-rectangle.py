@@ -5,12 +5,10 @@ A module to work with Rectangles
 
 
 class Rectangle:
-    """
-    Represent a 2D Polygon with four perpendicular sides
+    """Represent a 2D Polygon with four perpendicular sides
     """
     def __init__(self, width=0, height=0):
-        """
-        Initialize a Rectangle with a given width and height
+        """Initialize a Rectangle with a given width and height
         Args:
             width (int): Width of the rectangle
             height (int): Width of the rectangle
@@ -20,8 +18,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """
-        Retrieve the width of Rectangle
+        """Retrieve the width of Rectangle
         Returns:
             int: Width of Rectangle
         """
@@ -29,8 +26,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """
-        Retrieve the height of Rectangle
+        """Retrieve the height of Rectangle
         Returns:
             int: Width of Rectangle
         """
@@ -38,8 +34,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """
-        Update the width of Rectangle
+        """Update the width of Rectangle
         Args:
             value (int): The new width of Rectangle
         """
@@ -52,8 +47,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """
-        Update the height of Rectangle
+        """Update the height of Rectangle
         Args:
             value (int): The new height of Rectangle
         """
@@ -65,16 +59,14 @@ class Rectangle:
             self.__height = value
 
     def area(self):
-        '''
-        Compute the area of Rectangle
+        '''Compute the area of Rectangle
         Returns:
             int: The area of Rectangle
         '''
         return self.width * self.height
 
     def perimeter(self):
-        '''
-        Compute the perimeter of Rectangle
+        '''Compute the perimeter of Rectangle
         Returns:
             int: The perimeter of Rectangle
         '''
@@ -84,8 +76,7 @@ class Rectangle:
             return 2 * (self.width + self.height)
 
     def __str__(self):
-        '''
-        Return a string representation of Rectangle
+        '''Return a string representation of Rectangle
         Returns:
             str: String representation of Rectangle
         '''
@@ -98,8 +89,7 @@ class Rectangle:
             return ''.join(res)
 
     def __repr__(self):
-        '''
-        Return a representation of Rectangle's initialization
+        '''Return a representation of Rectangle's initialization
         Returns:
             str: String representation of Rectangle's initialization
         '''
